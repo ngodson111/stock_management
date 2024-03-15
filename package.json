@@ -1,0 +1,17 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "scripts": {
+    "start:client": "cd bin/client && npm start",
+    "start:server": "cd bin/server && node dist/app.js",
+    "start": "concurrently \"npm run start:client\" \"npm run start:server\""
+  },
+  "dependencies": {
+    "client": "file:bin/client",
+    "pkg": "^5.8.1",
+    "server": "file:bin/server"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.2"
+  }
+}

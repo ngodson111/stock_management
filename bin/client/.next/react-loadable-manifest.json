@@ -1,0 +1,18 @@
+{
+  "stocks/edit.tsx -> @/ui/uieditor/index": {
+    "id": 2315,
+    "files": [
+      "static/chunks/f70991a6.5593e85c6706cb35.js",
+      "static/chunks/911.b77c5e4afb2a3660.js",
+      "static/chunks/315.31ba38e6f160fbf5.js"
+    ]
+  },
+  "stocks/insert.tsx -> @/ui/uieditor/index": {
+    "id": 2315,
+    "files": [
+      "static/chunks/f70991a6.5593e85c6706cb35.js",
+      "static/chunks/911.b77c5e4afb2a3660.js",
+      "static/chunks/315.31ba38e6f160fbf5.js"
+    ]
+  }
+}
