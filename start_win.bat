@@ -1,7 +1,7 @@
 @echo off
 
 rem Start the system
-start cmd /k npm start
+cmd /k npm start
 
 rem Wait for the server to start
 timeout /t 5
