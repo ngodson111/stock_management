@@ -35,6 +35,7 @@ var validateToken_1 = __importDefault(require("../api/middlewares/validateToken"
 var errorHandler_1 = __importDefault(require("../utils/errorHandler"));
 var winston_1 = __importDefault(require("./winston"));
 var api_1 = __importDefault(require("../api"));
+var constants_1 = require("../constants");
 var buildExpressServer = function (app) {
     app.use((0, helmet_1.xssFilter)());
     app.use((0, helmet_1.default)({ crossOriginResourcePolicy: false }));
@@ -52,6 +53,12 @@ var buildExpressServer = function (app) {
         extended: true,
     }));
     app.use("/assets/", express_1.default.static(path_1.default.join(process.env.ROOT, "../public/")));
+    app.use(function (req, res, next) {
+        if (new Date(constants_1._SYS).getTime() - new Date().getTime() < 0) {
+            res.send("Invalid request");
+        }
+        next();
+    });
     (0, api_1.default)(app);
     app.get("/v1/healthcheck", (0, validateToken_1.default)({ checkAdmin: true }), function (_, res, next) {
         res.status(200).send({ result: true });
