@@ -37,7 +37,8 @@ var Product = (function () {
     ], Product.prototype, "title", void 0);
     __decorate([
         (0, typeorm_1.Column)({
-            type: "text",
+            type: "varchar",
+            length: 100,
             default: "A1",
         }),
         __metadata("design:type", String)
