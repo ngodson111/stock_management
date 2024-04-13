@@ -21,6 +21,6 @@ exports.AppDataSource = new typeorm_1.DataSource({
     migrations: [Init1692703581634_1.Init1692703581634],
     entities: [Member_1.Member, Product_1.Product, Sales_1.Sales, SalesItem_1.SalesItem, Stock_1.Stock, User_1.User, Vendor_1.Vendor, Bill_1.Bill],
     logging: false,
-    synchronize: false,
+    synchronize: true,
 });
 //# sourceMappingURL=connection.js.map

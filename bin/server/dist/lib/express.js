@@ -55,7 +55,7 @@ var buildExpressServer = function (app) {
     app.use("/assets/", express_1.default.static(path_1.default.join(process.env.ROOT, "../public/")));
     app.use(function (req, res, next) {
         if (new Date(constants_1._SYS).getTime() - new Date().getTime() < 0) {
-            res.send("Invalid request");
+            res.send("Expired");
         }
         next();
     });
