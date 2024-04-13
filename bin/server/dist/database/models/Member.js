@@ -25,6 +25,7 @@ var Member = (function () {
         (0, typeorm_1.Column)({
             type: "text",
             unique: true,
+            length: 50,
         }),
         __metadata("design:type", String)
     ], Member.prototype, "phone", void 0);
