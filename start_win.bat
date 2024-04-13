@@ -1,5 +1,8 @@
 @echo off
 
+rem Open the browser
+start "Chrome" "C:\Program Files\Google\Chrome\Application\chrome.exe" --app="http://localhost:3000"
+
 rem Start the system
 cmd /k npm start
 
@@ -12,9 +15,6 @@ echo Waiting for system to start...
 timeout /t 2 /nobreak >nul
 tasklist /fi "imagename eq node.exe" | find /i "node.exe" >nul
 if errorlevel 1 goto waitForSystemUp
-
-rem Open the browser
-start "Chrome" "C:\Program Files\Google\Chrome\Application\chrome.exe" --app="http://localhost:3000"
 
 rem Wait for the user to close the client command line window
 :waitForSystemClose
