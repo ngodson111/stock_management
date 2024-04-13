@@ -23,7 +23,7 @@ var Member = (function () {
     ], Member.prototype, "id", void 0);
     __decorate([
         (0, typeorm_1.Column)({
-            type: "text",
+            type: "varchar",
             unique: true,
             length: 50,
         }),
