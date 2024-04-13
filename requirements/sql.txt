@@ -1,0 +1,6 @@
+win: https://dev.mysql.com/downloads/file/?id=526084
+mac: https://dev.mysql.com/downloads/file/?id=526336
+
+# sql
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+flush privileges;
