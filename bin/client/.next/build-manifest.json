@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/xxspk04iAorFYCYCnmC2F/_buildManifest.js",
-    "static/xxspk04iAorFYCYCnmC2F/_ssgManifest.js"
+    "static/EsKavDGUY7l5I-QXhjp3U/_buildManifest.js",
+    "static/EsKavDGUY7l5I-QXhjp3U/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -94,7 +94,7 @@
       "static/chunks/401-067e5e1215481eea.js",
       "static/chunks/78-031b153d431c5153.js",
       "static/chunks/301-5344226544bdf810.js",
-      "static/chunks/849-3c420a3fe4c9a657.js",
+      "static/chunks/849-9dff61519301e110.js",
       "static/chunks/pages/sales-2e0fba342886cbc4.js"
     ],
     "/sales/data": [
@@ -113,7 +113,7 @@
       "static/chunks/458-7309519cf6cadb8d.js",
       "static/chunks/401-067e5e1215481eea.js",
       "static/chunks/78-031b153d431c5153.js",
-      "static/chunks/849-3c420a3fe4c9a657.js",
+      "static/chunks/849-9dff61519301e110.js",
       "static/chunks/pages/sales/insert-cee393f547dd3653.js"
     ],
     "/sales/items": [
