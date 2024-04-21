@@ -42,7 +42,8 @@ var Stock = (function () {
     ], Stock.prototype, "product", void 0);
     __decorate([
         (0, typeorm_1.Column)({
-            type: "datetime",
+            type: "varchar",
+            length: 100,
         }),
         __metadata("design:type", Date)
     ], Stock.prototype, "date", void 0);

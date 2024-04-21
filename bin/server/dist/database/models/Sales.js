@@ -43,7 +43,8 @@ var Sales = (function () {
     ], Sales.prototype, "discount", void 0);
     __decorate([
         (0, typeorm_1.Column)({
-            type: "datetime",
+            type: "varchar",
+            length: 100,
         }),
         __metadata("design:type", Date)
     ], Sales.prototype, "date", void 0);
