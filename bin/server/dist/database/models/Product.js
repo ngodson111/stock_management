@@ -39,7 +39,7 @@ var Product = (function () {
         (0, typeorm_1.Column)({
             type: "varchar",
             length: 100,
-            default: "A1",
+            nullable: true,
         }),
         __metadata("design:type", String)
     ], Product.prototype, "rack", void 0);

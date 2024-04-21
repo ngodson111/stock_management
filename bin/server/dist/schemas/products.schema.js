@@ -9,10 +9,10 @@ exports.ProductSchema = zod_1.z.object({
     title: (0, common_schema_1.stringField)("Title"),
     buyingPrice: (0, common_schema_1.positiveNumberString)("Buying Price"),
     sellingPrice: (0, common_schema_1.positiveNumberString)("Selling Price"),
-    description: (0, common_schema_1.stringField)("Description"),
-    tags: (0, common_schema_1.stringField)("Tags"),
+    description: (0, common_schema_1.stringField)("Description").optional().nullable(),
+    tags: (0, common_schema_1.stringField)("Tags").optional().nullable(),
     quantity: (0, common_schema_1.positiveNumberString)("Quantity"),
-    rack: (0, common_schema_1.stringField)("Rack"),
+    rack: (0, common_schema_1.stringField)("Rack").optional().nullable(),
     inserted: (0, common_schema_1.stringField)("Inserted"),
     updated: (0, common_schema_1.stringField)("Updated"),
 });

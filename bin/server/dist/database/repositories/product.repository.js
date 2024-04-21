@@ -160,7 +160,7 @@ var productRepository = {
                                 title: title,
                                 description: description,
                                 tags: tags,
-                                rack: rack,
+                                rack: rack || undefined,
                                 buyingPrice: +buyingPrice,
                                 sellingPrice: +sellingPrice,
                             })];
@@ -190,7 +190,7 @@ var productRepository = {
                                 code: code,
                                 title: title,
                                 description: description,
-                                rack: rack,
+                                rack: rack || undefined,
                                 tags: tags,
                                 buyingPrice: buyingPrice ? +buyingPrice : undefined,
                                 sellingPrice: sellingPrice ? +sellingPrice : undefined,
