@@ -74,7 +74,7 @@ var buildExpressServer = function (app) {
         });
     });
     app.use((0, errorHandler_1.default)());
-    var PORT = process.env.PORT || 9090;
+    var PORT = process.env.PORT || 9000;
     app.listen(PORT, function () { return winston_1.default.info("Server Starting: ".concat(PORT)); });
 };
 exports.default = buildExpressServer;
