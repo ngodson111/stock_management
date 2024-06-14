@@ -44,7 +44,7 @@ var product_repository_1 = __importDefault(require("../database/repositories/pro
 var productService = {
     create: function (_a) {
         return __awaiter(this, arguments, void 0, function (_b) {
-            var runner, doesExist, vendor, error_1;
+            var runner, doesExist, product, error_1;
             var buyingPrice = _b.buyingPrice, code = _b.code, description = _b.description, sellingPrice = _b.sellingPrice, tags = _b.tags, title = _b.title, rack = _b.rack;
             return __generator(this, function (_c) {
                 switch (_c.label) {
@@ -70,8 +70,8 @@ var productService = {
                                 runner: runner,
                             })];
                     case 4:
-                        vendor = _c.sent();
-                        return [2, vendor];
+                        product = _c.sent();
+                        return [2, product];
                     case 5:
                         error_1 = _c.sent();
                         throw error_1;
@@ -86,7 +86,7 @@ var productService = {
     },
     update: function (_a) {
         return __awaiter(this, arguments, void 0, function (_b) {
-            var runner, doesExist, doesCodeExist, _c, vendor, error_2;
+            var runner, doesExist, doesCodeExist, _c, product, error_2;
             var buyingPrice = _b.buyingPrice, code = _b.code, description = _b.description, sellingPrice = _b.sellingPrice, tags = _b.tags, title = _b.title, rack = _b.rack, id = _b.id;
             return __generator(this, function (_d) {
                 switch (_d.label) {
@@ -123,11 +123,12 @@ var productService = {
                                 tags: tags,
                                 title: title,
                                 rack: rack,
+                                quantity: doesExist.quantity.toString(),
                                 runner: runner,
                             })];
                     case 6:
-                        vendor = _d.sent();
-                        return [2, vendor];
+                        product = _d.sent();
+                        return [2, product];
                     case 7:
                         error_2 = _d.sent();
                         throw error_2;
